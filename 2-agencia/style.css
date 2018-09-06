@@ -1,31 +1,40 @@
-a{
-    text-decoration: nome;
-}
-
 *{
     margin: 0;
     padding: 0;
     /*padding eh o quanto os elementos vao se distanciar de outros por padrao*/
+    /* O "*" faz com que qualquer tag html siga as intruções passadas */
 }
 
+body {background-color: aquamarine;}
 
+body p {color: red;}
+
+/*FILHO DIRETO DE P*/
+body > p {color: yellow;}
+
+
+a{
+    text-decoration: none;
+}
 
 ul li {
     list-style: none;
 }
+
 header nav ul li a{
     color: black;
 }
 
+/*HOVER, passa o mouse e muda de cor o elemento*/
 header nav ul li a:hover{
-    color: blue
+    color: blue;
 }
 
 header nav ul li a:active{
     color: red; 
-
 }
 /* Ajustes de localização e fitting na tela*/
+/* O "." relaciona a uma classe */
 #artistas .flex{
     display: flex;
     justify-content: space-around;
@@ -33,3 +42,4 @@ header nav ul li a:active{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+ 
