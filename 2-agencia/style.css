@@ -5,41 +5,77 @@
     /* O "*" faz com que qualquer tag html siga as intruções passadas */
 }
 
-body {background-color: aquamarine;}
+body {background-color: #FAFAFAFA;}
 
-body p {color: red;}
+body p {color: grey;}
 
 /*FILHO DIRETO DE P*/
 body > p {color: yellow;}
 
+/*todos os id de p*/
+body >#p {color: blueviolet;}
+
 
 a{
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 ul li {
     list-style: none;
-}
-
-header nav ul li a{
+  }
+  
+  header nav ul li a {
     color: black;
-}
-
-/*HOVER, passa o mouse e muda de cor o elemento*/
-header nav ul li a:hover{
+    display: inline-block;
+  }
+  
+  header nav ul li a:hover {
     color: blue;
+    transition: color 400ms;
+  }
+  
+  header nav ul li a span {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    left: -100%;
+  }
+
+header nav ul li a:hover span {
+    left:0;
+    transition: left 600ms;
 }
 
-header nav ul li a:active{
-    color: red; 
+@keyframe mudaCor{
+    0% {color: black; }
+    100% {color: black;}    
 }
+  
+  header nav ul li a:active {
+    color: red;
+  }
+  
+  #artistas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
 /* Ajustes de localização e fitting na tela*/
 /* O "." relaciona a uma classe */
-#artistas .flex{
+
+/*#artistas .flex{
     display: flex;
     justify-content: space-around;
     
     margin-top: 30px;
     margin-bottom: 30px;
 }
- 
+*/

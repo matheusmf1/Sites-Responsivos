@@ -19,17 +19,19 @@
             <img src="http://picsum.photos/400/300" alt="Logo da agencia">
             <nav>
                 <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About us</a></li>
-                    <li><a href='#'>Artistas</a></li>
-                    <li><a href='#'>Portifolio</a></li>
-                    <li><a href='#'>Contato</a></li>
+                    <li><a href='#'>Home <span></span> </a></li> 
+                    <li><a href='#'>About us <span></span></a></li>
+                    <li><a href='#'>Artistas <span></span></a></li>
+                    <li><a href='#'>Portifolio<span></span></a></li>
+                    <li><a href='#'>Contato<span></span></a></li>
+                    <li><a href="./contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <section id="home">
+
                 <img src="http://picsum.photos/300/300" alt="Imagem 1">
                 <img src="http://picsum.photos/300/300" alt="Imagem 2">
                 <img src="http://picsum.photos/300/300" alt="Imagem 3">
@@ -38,10 +40,18 @@
             <section id="aboutUs">
                 <h2>Sobre nos</h2>
                 <div>
-                    <h3>Perfil</h3>
+                    <h3>Agencia X3l</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.      
                     </p>
+                <p>Lorem ipsum.....</p>
+                <br><br><br>
+                <p>
+                    Se quiser saber mais clique <span class="dib animated" id="teste">Aqui</span>.
+                  </p>
                 </div>
+                <div>
+                    <img src="https://picsum.photos/500/500" alt="Agência X3">
+                  </div>
             </section>
 
             <section id="artistas">
@@ -50,19 +60,24 @@
                 <li>
                     <img src="http://picsum.photos/300/300" alt="">
                     <h4>Matheus</h4>
+                    <p>Um breve texto</p>
                 </li>
                 <li>
                     <img src="http://picsum.photos/300/300" alt="">
                     <h4>Bia</h4>
+                    <p>Um breve texto</p>
                 </li>
                 <li>
                     <img src="http://picsum.photos/300/300" alt="">
                     <h4>Kike</h4>
+                    <p>Um breve texto</p>
                 </li>
                 <li>
                     <img src="http://picsum.photos/300/300" alt="">
                     <h4>Poliana</h4>
+                    <p>Um breve texto</p>
                 </li>
+                </ul>
             </section>
 
             <section id="Portifolio">
@@ -93,5 +108,11 @@
             <a href="#">Instagram</a>
             
         </footer>
+
+        <script>
+            document.getElementById('teste').addEventListener('click', function () {
+              this.classList.add('hinge');
+            });
+          </script>
     </body>    
 </html>
