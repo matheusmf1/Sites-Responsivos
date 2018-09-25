@@ -1,57 +1,91 @@
- margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    /*padding eh o quanto os elementos vao se distanciar de outros por padrao*/
+    /* O "*" faz com que qualquer tag html siga as intruções passadas */
 }
 
-/* HELPER CLASSES */
+/*HELPER CLASSES*/
 
-.dib {
-  display: inline-block;
-}
+body {background-color: #FAFAFAFA;}
 
-/* HELPER CLASSES */
 
-a {
-  text-decoration: none;
+/*FILHO DIRETO DE P*/
+body > p {color: yellow;}
+
+/*todos os id de p*/
+body >#p {color: blueviolet;}
+
+
+a{
+    text-decoration: none; 
 }
 
 ul li {
-  list-style: none;
-}
-
-header nav ul li a {
-  color: black;
-  display: inline-block;
-}
-
-header nav ul li a:hover {
-  color: blue;
-  transition: color 400ms;
-}
-
-header nav ul li a span {
-  width: 100%;
-  display: inline-block;
-  height: 1px;
-  background-color: black;
-  position: relative;
-  left: -100%;
-}
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    color: black;
+    display: inline-block;
+  }
+  
+  header nav ul li a:hover {
+    color: blue;
+    transition: color 400ms;
+  }
+  
+  header nav ul li a span {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    left: -100%;
+  }
 
 header nav ul li a:hover span {
-  left: 0;
-  transition: left 600ms;
+    left:0;
+    transition: left 600ms;
 }
 
-header nav ul li a:active {
-  color: red;
+@keyframe mudaCor{
+    0% {color: black; }
+    100% {color: black;}    
 }
+  
+  header nav ul li a:active {
+    color: red;
+  }
+  
+  #artistas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
 
-#artistas {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 
-.flex {
-  display: flex;
-  justify-content: space-around;
+/* Ajustes de localização e fitting na tela*/
+/* O "." relaciona a uma classe */
+
+/*#artistas .flex{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+*/
+ #menu {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    left: -100%;
+
+ }
