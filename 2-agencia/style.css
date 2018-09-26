@@ -9,6 +9,10 @@
   display: inline-block;
 }
 
+.bigger {
+  font-size: 40px;
+}
+
 /* HELPER CLASSES */
 
 a {
