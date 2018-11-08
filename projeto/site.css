@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+
+
+  /* HELPER CLASSES */
+
+.dib {
+	display: inline-block;
+  }
+  
+  .bigger {
+	font-size: 40px;
+  }
+  
+
+body {
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: rgb(209, 198, 198);
+	/* font-size: 120%; */
+	line-height: 1.5;
+	
+}
+
+header{
+	background-color:#851944;
+	color: #F2FFFC;
+	text-align: center;
+	font-size: 120%;
+	position: relative;
+  }
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+main h1 {
+	text-align: center;
+	background-color:#851944;
+	color: #FFF;
+	padding: 20px;
+	/* font-size: 60px; */
+}
+
+p {
+	text-align: justify;
+	margin: 20px 0;
+}
+
+footer {
+	background-color: #851944;
+	color: #F2FFFC;
+	padding: 10px;
+}
+
+nav a {
+	color: #F2FFFC;
+}
+
+
+main h1 {
+	padding: 25px;
+	border-bottom: 10px black;
+
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30px;
+}
